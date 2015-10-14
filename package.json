@@ -1,29 +1,32 @@
 {
-  "name": "timewatch",
-  "version": "1.0.0",
-  "description": "Time watch",
-  "main": "dist/index.js",
-  "scripts": {
-    "prebuild": "rm -rf dist && mkdir dist",
-    "build": "babel src/index.js -o dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/knifir/timewatch.git"
-  },
-  "keywords": [
+    "name": "timewatch",
+    "version": "1.0.0",
+    "description": "Time watch",
+    "main": "dist/index.js",
+    "scripts": {
+        "prebuild": "rm -rf dist && mkdir dist",
+        "build": "babel src/index.js -o dist/index.js",
+        "pretest": "npm run build",
+        "test": "mocha src/index.test.js -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/knifir/timewatch.git"
+    },
+    "keywords": [
     "timewatch",
     "watch",
     "timer"
   ],
-  "author": "Joel Almeida <joel_almeida14@hotmail.com> (http://github.com/knifir)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/knifir/timewatch/issues"
-  },
-  "homepage": "https://github.com/knifir/timewatch#readme",
-  "devDependencies": {
-    "babel": "5.8.23"
-  }
+    "author": "Joel Almeida <joel_almeida14@hotmail.com> (http://github.com/knifir)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/knifir/timewatch/issues"
+    },
+    "homepage": "https://github.com/knifir/timewatch#readme",
+    "devDependencies": {
+        "babel": "5.8.23",
+        "chai": "3.3.0",
+        "mocha": "2.3.3"
+    }
 }
