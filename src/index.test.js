@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var watch = require('../dist/index.js');
+import {expect} from 'chai';
+import watch from './index';
 
 describe('timewatch', function () {
     describe('now', function () {

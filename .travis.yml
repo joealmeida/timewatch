@@ -3,6 +3,9 @@ language: node_js
 cache:
   directories:
     - node_modules
+branches:
+  only:
+    - master
 notifications:
   email: false
 node_js:
@@ -13,6 +16,7 @@ before_script:
   - npm prune
 script:
   - npm run test:single
+  - npm run build
 after_success:
   - npm run semantic-release
 branches:
