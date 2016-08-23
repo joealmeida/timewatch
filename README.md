@@ -19,7 +19,3 @@ Simple watch in javascript.
 
 `watch.time()` - Returns the current time in the clock
 
-
-# Observations
-
-The development process is currently full of tools but the main porpuse of this module was to try those tools. 
